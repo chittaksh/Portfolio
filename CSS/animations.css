@@ -1,0 +1,214 @@
+/*
+---------------------------------------------------------------------------------
+    design and code by: chittaksh khadse
+---------------------------------------------------------------------------------
+*/
+
+
+/* Slide in Left */
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+}
+
+
+/* Slide in Right */
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+}
+
+
+/* Slide in Bottom */
+@-webkit-keyframes slideInBottom {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInBottom {
+  -webkit-animation-name: slideInBottom;
+  animation-name: slideInBottom;
+  animation-duration: 1s;
+}
+
+
+/* Slide in Top */
+@-webkit-keyframes slideInTop {
+  from {
+    -webkit-transform: translate3d( 0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInTop {
+  -webkit-animation-name: slideInTop;
+  animation-name: slideInTop;
+  animation-duration: 1s;
+}
+
+/* Frull the panels */
+@-webkit-keyframes frull{
+  
+  0%{
+    opacity:0;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+  70%{
+    opacity: 1;
+    -webkit-transform: rotateX(30deg);
+    transform: rotateX(30deg);
+  }
+
+  100%{
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes frull{
+  
+  0%{
+    opacity:0;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+  70%{
+    opacity: 1;
+    -webkit-transform: rotateX(30deg);
+    transform: rotateX(30deg);
+  }
+
+  100%{
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+}
+
+.frull{
+  -webkit-animation-name: frull;
+  animation-name: frull;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes heightChange{
+  0%{
+    height: 0;
+    opacity: 0;
+  }
+  50%{
+    height: auto;
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.heightChange{
+  -webkit-animation-name: heightChange;
+  animation-name: heightChange;
+  animation-duration: 1s;
+}
+

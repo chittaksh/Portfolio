@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+	<title>Chittaksh Khadse | Software Engineer, Web Developer | chittaksh@immensity.in</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<meta name="keywords" content="Chittaksh, Khadse, Chittaksh, Khadse, Software Developer" />
+	<meta name="description" content="" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+	<!-- Awesome Font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!-- Personal CSS -->
+	<link rel="stylesheet" type="text/css" href="CSS/portfolio.css" media="all" />
+	<!-- <link rel="stylesheet" type="text/css" href="CSS/test.css" media="all" /> -->
+	<link rel="stylesheet" type="text/css" href="CSS/animations.css" media="all" />
+	<!-- <link rel="stylesheet" type="text/css" href="CSS/timeline.css" media="all" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="original.css" media="all" /> -->
+
+	<script>
+		jQuery(document).ready(function($){
+			var $half_block = $('.half');
+
+			var $header = $('header');
+			var $pic = $('.header');
+
+			$header.css("visibility", "hidden");
+
+	//hide timeline blocks which are outside the viewport
+	$half_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).addClass('is-hidden');
+		}
+	});
+
+		//on scolling, show/animate timeline blocks when enter the viewport
+		$(window).on('scroll', function(){
+			$half_block.each(function(){
+				if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).hasClass('is-hidden') ) {
+					$(this).removeClass('is-hidden').addClass('slideInBottom');
+				}
+			});
+
+			if($(window).scrollTop() <= 250){
+				$header.css("visibility", "hidden");
+				$header.each(function(){
+					$(this).removeClass('slideInTop');
+					$pic.each(function(){$(this).removeClass('slideInTop')});			
+				});
+			}else{
+				$header.css("visibility", "visible");
+				$header.each(function(){
+					$(this).addClass('slideInTop');
+					$pic.each(function(){$(this).addClass('slideInTop')});					
+				});
+			}
+
+		});
+	});
+
+</script>
+
+</head>
+<body>
+
+	<header>
+		<div class="header-panel">
+			<div class="header">
+				<div class="pic">
+					<img src ="Images/Me.JPG" alt="Chittaksh Khadse" class="logo">
+				</div>
+				<h2>Chittaksh Khadse</h2>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="container top-margin" >
+			<!-- Sidebar -->
+			<aside class="sidebar slideInLeft">
+				<div class="panel">
+					<img src="Images/Me.JPG" width="100%" alt="Chittaksh Khadse" />
+
+					<div id="parent" class="summary">
+						<p><i class="fa fa-quote-left"></i>Hey, I’m a software developer from Los Angeles, CA. I use web technologies to make applications. At the moment I’m primarily use Java, MySQL, Angular.JS.</p>
+						<p>I am currently pusuing my Master's in Computer Science I am currently looking for full time software developer or data scientist oppurtunities in USA.<i class="fa fa-quote-right"></i>
+							<div id="hover-content" class="description">
+								****
+							</div>
+						</p>
+					</div>
+
+					<hr>
+
+					<div class="contact">
+						<p><i class="fa fa-briefcase"></i>Software Developer </p>
+						<p><i class="fa fa-home"></i>Los Angeles, CA</p>
+						<div class="links">
+							<a href="tel:+16264648186" target="_blank"><i class="fa fa-phone"></i></a>
+							<a href="mailto:chittaksh@immensity.com" target="_blank"><i class="fa fa-envelope"></i></a>
+							<a href="https://www.linkedin.com/in/chittakshkhadse/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.facebook.com/chittaksh" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.github.com/chittaksh" target="_blank"><i class="fa fa-github"></i></a>
+						</div>
+						<div class="download">
+							<a href="Docs/Resume.pdf" target="_blank" class="button"><i class="fa fa-download"></i>Download Resume</a>
+						</div>
+					</div>
+
+					<hr>
+				</div>
+			</aside>
+
+			<!-- Main Content --> 
+			<content class="content slideInRight">
+				<div class="panel panel-padding bottom-margin">
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-suitcase"></i>Experience</h3>
+
+					<div class="item">
+						<div id="parent" class="container">
+							<aside class="sidebar" style="text-align:center;">
+								<img src ="Images/Genba.gif" width="90" alt="Genba" class="logo">
+							</aside>
+							<content class="content">
+								<h4>Software Engineer / RentGenba.com</h4>
+								<div class="date"><i class="fa fa-calendar"></i>Sept 2016 - Mar 2017</div>
+							</content>
+
+							<div id="hover-content" class="description">
+								<h5><i class="fa fa-dot-circle-o"></i>Responsibilities</h5>
+								<ul>
+									<li>Worked as a Full Stack Developer on the ‘Genba’ web application.</li>
+									<li>Developed and maintaining the database for storing the data in SQL and NoSQL on Azure Server.</li>
+									<li>Developed the server code and API using ASP.NET Core 1.0 (C#).</li>
+									<li>Developed the front end using the ASP.NET and AngularJS.</li>
+									<li>Worked on various enhancements of the website using JavaScript, jQuery.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="item">
+						<div id="parent" class="container">
+							<aside class="sidebar" style="text-align:center;">
+								<img src="Images/Sahir.jpg" width="90" alt="Sahir Projects" class="logo">
+							</aside>
+
+							<content class="content">
+								<h4>Software Engineer / Sahir Projects</h4>
+								<div class="date"><i class="fa fa-calendar"></i>Jan 2014 - Jan 2015</div>
+							</content>
+
+							<div id="hover-content" class="description">
+								<h5><i class="fa fa-dot-circle-o"></i>Responsibilities</h5>
+								<ul>
+									<li>Worked as a Full Stack Developer on the ‘DARVICO’ web application.</li>
+									<li>Developed and maintained the database schema for storing and managing all activities in SQL.</li>
+									<li>Developed various stored procedures and triggers to maintain the integrity of the data.</li>
+									<li>Developed and maintained various C# modules and with efficient and reusable code in C#.</li>
+									<li>Worked on various enhancements of the website using JavaScript, AJAX, jQuery.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+				</div>
+
+				<div class="panel panel-padding" style="margin-bottom: 8px;">
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-certificate"></i>Education</h3>
+
+					<div class="item">
+
+						<div id="parent" class="container">
+							<aside class="sidebar" style="text-align:center;">
+								<img src ="Images/CSULA.png" width="90" alt="Genba" class="logo">
+							</aside>
+							<content class="content">
+								<h4>California State University, Los Angeles, CA (USA)</h4>
+								<div class="date"><i class="fa fa-calendar"></i>2015 - current</div>
+								<div class="statement">
+									Master's Degree in Computer Science.
+								</div> 
+							</content>
+
+							<div id="hover-content" class="description">
+								<h5><i class="fa fa-dot-circle-o"></i>Subjects</h5>
+								<div class="subjects">
+									<div class="onethird">
+										<ul class="list">
+											<li><h6>CS512:</h6> Advanced Algorithms</li>
+											<li><h6>CS522:</h6> Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+									<div class="onethird">
+										<ul class="list">
+											<li>CS512: Advanced Algorithms</li>
+											<li>CS522: Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+									<div class="onethird">
+										<ul class="list">
+											<li>CS512: Advanced Algorithms</li>
+											<li>CS522: Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="item">
+
+						<div id="parent" class="container">
+							<aside class="sidebar" style="text-align:center;">
+								<img src ="Images/SGBAU.jpg" width="90" alt="Genba" class="logo">
+							</aside>
+							<content class="content">
+								<h4>Sant Gadge Baba Amravati Univeristy, Amravati, MH (IN)</h4>
+								<div class="date"><i class="fa fa-calendar"></i>2008 - 2013</div>
+								<div class="statement">
+									Bachelors's Degree in Computer Science from G. H. Raisoni College of Engineering.
+								</div> 
+							</content>
+
+							<div id="hover-content" class="description">
+								<h5><i class="fa fa-dot-circle-o"></i>Subjects</h5>
+								<div class="subjects">
+									<div class="onethird">
+										<ul class="list">
+											<li>CS512: Advanced Algorithms</li>
+											<li>CS522: Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+									<div class="onethird">
+										<ul class="list">
+											<li>CS512: Advanced Algorithms</li>
+											<li>CS522: Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+									<div class="onethird">
+										<ul class="list">
+											<li>CS512: Advanced Algorithms</li>
+											<li>CS522: Advanced Database Systems</li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+				</div>
+			</content>
+		</section>
+
+		<section class="container">
+			<div class="skills slideInBottom"  >
+				<div class="panel ski">
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-key"></i>Skills</h3>
+
+					<p><h5>Programming and Scripting Languages:</h5> C#, Java, PL SQL, PHP, Python, JavaScript.  </p>
+					<p><h5>Web Technologies and Services:</h5> HTML, CSS, JavaScript, XML, Ajax, JSTL,  Bootstrap, Zurb Foundation.   </p>
+					<p><h5>Application Framework:</h5> ASP.NET Core, ASP.NET MVC, AngularJS, Spring, Hibernate. </p>
+					<p><h5>Databases:</h5> Oracle 10g/11g, MySQL, SQL Server, PostgreSQL, and MongoDB, ElasticSearch.  </p>
+					<p><h5>Versioning and Bug Tracking:</h5> SVN, GitHub, Maven, Gradle.   </p>
+					<p><h5>Server Programming:</h5> Apache Tomcat, XAMPP.  </p>
+					<p><h5>Tools and IDE:</h5> Visual Studio, Eclipse IDE, MySQL Workbench, SQL Server Management Studio, Jupyter Notebook.  </p>
+					<p><h5>Other Tools and Technologies:</h5>  Apache Maven, Junit, testing, etc.  </p>
+					<p><h5>Data visualization plugin:</h5> Kibana, python-matplotlib. </p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Start : Projects : Section 1 -->
+		<section class="container" >
+			<div class="half">
+				<div class="panel project" style="min-height: 80px">
+					<div class="img">
+						<img src="Images/Projects/amazon.png" alt="Lease Management System">
+					</div>
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-tasks"></i>Project : Amazon Employee Access Challenge</h3>
+					<div style="padding:0 16px 16px 16px; height: 80px;">
+						<p>This was a solution to the Amazon Employes Access Challenge posted on kaggle. It had an accuracy of 82% (and improving).</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="half">
+				<div class="panel project" style="min-height: 80px">
+					<div class="img">
+						<img src="https://github.com/chittaksh/TrueColour/blob/master/Images/TrueColourMarketLogo.png?raw=true" alt="True Colour English" width="48%" class="left">
+					</div>
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-tasks"></i>App : True Colour</h3>
+					<div style="padding:0 16px 16px 16px; height: 80px;">
+						<p>True Color is a game based on the Stroop effect. There are 4 different types of game plays.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="half">
+				<div class="panel project" style="min-height: 80px">
+					<div class="img">
+						<iframe width="100%" height="250px" src="https://www.youtube.com/embed/8t6byl9nJKo"></iframe>
+					</div>
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-tasks"></i>Project : Car Price Predictions</h3>
+					<div style="padding:0 16px 16px 16px; height: 80px;">
+						<p>Car Price Prediction was developed to crawl web, call API's and gather the prices of various car models and use the data to find the best used car price.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="half">
+				<div class="panel project" style="min-height: 100px">
+					<div class="img">
+						<img src="Images/Projects/google-yahoo.jpg" alt="Lease Management System">
+					</div>
+					<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-tasks"></i>Project : Personalized Search Engine</h3>
+					<div style="padding:0 16px 16px 16px; height: 80px;">
+						<p>Personalized Search Engine is designed to get results from google and yahoo based on keywords entered by the user and his previous searches, location and various other factors.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End : Projects : Section 1 -->
+
+		<section class="review-panel is-hidden" style="min-height: 100px;">
+
+		<div class="review">
+
+			<h4><i class="fa fa-quote-left"></i>
+
+				Chittaksh is an absolute pleasure to work with. He is extremely motivated and loves learning newtechnologies. <br> He helped build our website quickly and efficiently and brings a smile to work everyday. I <br> highly recommend hiring Chittaksh for any development needs.
+
+				<i class="fa fa-quote-right"></i>
+			</h4>
+
+			<hr> 
+
+			<section class="name">
+					<div class="pic">
+						<img src ="Images/charlie.jpg" alt="Chittaksh Khadse" class="logo">
+					</div>
+					<h2>Charlie Brooks,</h2>General Manager at Genba.
+
+			</section>
+
+		</div>
+
+		</section>
+
+			<!-- Start : Projects : Section 2 -->
+			<section class="container">
+
+				<div class="half">
+					<div class="panel project" style="min-height: 80px">
+						<div class="img">
+							<img src="https://github.com/chittaksh/CS320-Fall-2015-Lease-Management-System/blob/master/Screenshots/2.%20Register.png?raw=false" alt="Lease Management System">
+						</div>
+						<h3 style="margin-bottom: 16px; padding-bottom: 16px;"><i class="fa fa-tasks"></i>Project : Lease Management System</h3>
+						<div style="padding:0 16px 16px 16px; height: 100px;">
+							<p>Lease Management System is designed to store, retrieve and modify apartments details, lease records and rent details for each apartment. It also stores owner details for an apartment.</p>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- End : Projects : Section  2-->
+
+		</main>
+
+		<footer>
+			<div  class="panel footer">
+				<div class="links">
+					<a href="tel:+16264648186" target="_blank"><i class="fa fa-phone"></i></a>
+					<a href="mailto:chittaksh@immensity.com" target="_blank"><i class="fa fa-envelope"></i></a>
+					<a href="https://www.linkedin.com/in/chittakshkhadse/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.facebook.com/chittaksh" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.github.com/chittaksh" target="_blank"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+	</html>
+
