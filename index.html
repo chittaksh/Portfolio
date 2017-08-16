@@ -6,7 +6,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<meta name="keywords" content="Chittaksh, Khadse, Chittaksh, Khadse, Software Developer" />
+	<meta name="keywords" content="Chittaksh Khadse, Chittaksh, Khadse, Software Developer" />
 	<meta name="description" content="" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -68,6 +68,19 @@
 
 </head>
 <body>
+
+<?php
+$file = "log.txt";
+$ip = $_SERVER['REMOTE_ADDR'];
+$date = date("d-m-y");
+$time = date("H:i:s");
+$browser = $_SERVER['HTTP_USER_AGENT'];
+$data = "IP: ".$ip.", Date: ".$date.", Time:".$time.", Browser: ".$browser;
+
+$f=fopen($file, 'a');
+fwrite($f,$data."\r\r\n");
+fclose($f);
+?>
 
 	<header>
 		<div class="header-panel">
@@ -164,8 +177,8 @@
 								<ul>
 									<li>Worked as a Full Stack Developer on the ‘DARVICO’ web application.</li>
 									<li>Developed and maintained the database schema for storing and managing all activities in SQL.</li>
-									<li>Developed various stored procedures and triggers to maintain the integrity of the data.</li>
-									<li>Developed and maintained various C# modules and with efficient and reusable code in C#.</li>
+									<li>Developed efficient SQL procedures and triggers to maintain integrity of data. </li>
+									<li>Developed and maintained various C# modules with efficient and reusable code.</li>
 									<li>Worked on various enhancements of the website using JavaScript, AJAX, jQuery.</li>
 								</ul>
 							</div>
